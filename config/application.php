@@ -43,6 +43,17 @@ if (file_exists($root_dir . '/.env')) {
  */
 define('WP_ENV', env('WP_ENV') ?: 'production');
 
+
+/**
+ * AWS S3 Setup
+ */
+
+define( 'S3_UPLOADS_BUCKET', env('AWS_UPLOAD_BUCKET') );
+define( 'S3_UPLOADS_REGION', env('AWS_UPLOAD_REGION') );
+define( 'S3_UPLOADS_KEY', env('AWS_ACCESS_KEY') );
+define( 'S3_UPLOADS_SECRET', env('AWS_SECRET_KEY') );
+
+
 /**
  * URLs
  */
@@ -128,12 +139,3 @@ Config::apply();
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
-
-/**
- * AWS S3 Setup
- */
-
-define( 'S3_UPLOADS_BUCKET', env('AWS_UPLOAD_BUCKET') );
-define( 'S3_UPLOADS_REGION', env('AWS_UPLOAD_REGION') );
-define( 'S3_UPLOADS_KEY', env('AWS_ACCESS_KEY') );
-define( 'S3_UPLOADS_SECRET', env('AWS_SECRET_KEY') );
