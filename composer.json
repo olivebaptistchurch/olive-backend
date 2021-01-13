@@ -40,8 +40,12 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "humanmade/s3-uploads": "^2.2",
-    "wpackagist-plugin/custom-post-type-ui": "^1.8",
-    "wpackagist-plugin/user-role-editor": "^4.58"
+    "wpackagist-plugin/user-role-editor": "^4.58",
+    "wpackagist-plugin/advanced-custom-fields": "^5.9",
+    "wpackagist-plugin/classic-editor": "^1.6",
+    "wp-graphql/wp-graphql": "^1.1",
+    "wp-graphql/wp-graphql-acf": "^0.4.0",
+    "wpackagist-plugin/limit-login-attempts-reloaded": "^2.19"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",
