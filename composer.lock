@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5e5c7116627339626e849f31ec4760f",
+    "content-hash": "8381322c0c533c507bc5f4e41079f92f",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1754,6 +1754,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/user-role-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-gatsby",
+            "version": "0.9.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-gatsby/",
+                "reference": "tags/0.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-gatsby.0.9.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-gatsby/"
         }
     ],
     "packages-dev": [
@@ -2137,5 +2155,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
