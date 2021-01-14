@@ -32,8 +32,8 @@
         "can_export"            => true, // Allows export in Tools > Export
         "taxonomies"            => array(), // Add supported taxonomies,
         "show_in_graphql"       => true,
-        "graphql_single_name"   => "CustomPost",
-        "graphql_plural_name"   => "CustomPosts",
+        "graphql_single_name"   => "funeralVideo",
+        "graphql_plural_name"   => "funeralVideos",
       )
     );
   }
