@@ -98,3 +98,19 @@ function remove_toolbar_items($wp_adminbar) {
 }
 
 add_action('admin_bar_menu', 'remove_toolbar_items', 999);
+
+function wpse_cpt_enqueue( $hook_suffix ){
+    $cpt = 'funeral_videos';
+
+    if( in_array($hook_suffix, array('post.php', 'post-new.php') ) ){
+        $screen = get_current_screen();
+
+        if( is_object( $screen ) && $cpt == $screen->post_type ){
+
+            // Register, enqueue scripts and styles here
+            wp_enqueue_script('funeral-admin-script', get_stylesheet_directory_uri() . '/js/admin-funeral.js');
+        }
+    }
+}
+
+add_action( 'admin_enqueue_scripts', 'wpse_cpt_enqueue' );
